@@ -28,7 +28,8 @@ print(int)
 string = f'{int}'
 print('Attempting to Comment.', flush=True)
 for status in api.user_timeline():
-    #Edit Hashtags
+    #Edit text you want to tweeted.
+    #Don't exceed the charector limit (280).
     #items(no.) no. of time you want to tweet
     api.update_status('YOUR TEXT TO BE TWEETED @User_name #Hashtags ' + ' ' + string).items(100)
     print('Comment successful')
